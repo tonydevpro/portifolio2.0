@@ -17,11 +17,11 @@ import listaDeTarefa from './assets/listadeTarefa.png';
 import listaMercado from './assets/listaMercado.png';
 import lojaPg from './assets/lojaPg.png';
 import previsaoTempo from './assets/previsaoTempo.png';
-import projetoFormulario from './assets/projetoFormulario.png';
 import projetoQrCode from './assets/projetoQrCode.png';
 import projetoXDevs from './assets/projetoXDevs.png';
 import relogio from './assets/relogio.png';
 import relogioData from './assets/relogioData.png';
+import { FaReact, FaHtml5, FaCss3, FaJs } from 'react-icons/fa';
 
 function App() {
   const projetos = [
@@ -29,155 +29,175 @@ function App() {
       imagem: buscadorDeNomes,
       titulo: "Buscador de Nomes",
       descricao: "Um projeto para buscar nomes em uma lista.",
-      linkGitHub: "https://github.com/seu-usuario/buscador-de-nomes",
-      linkDemo: "https://demo-buscador-de-nomes.com"
+      linkGitHub: "https://github.com/tonydevpro/pesquisar-nomes",
+      linkDemo: "https://tonydevpro.github.io/pesquisar-nomes/",
+      ferramentas: "React, HTML, CSS, JavaScript"
     },
     {
       imagem: calculadora,
       titulo: "Calculadora",
       descricao: "Uma calculadora simples e funcional.",
-      linkGitHub: "https://github.com/seu-usuario/calculadora",
-      linkDemo: "https://demo-calculadora.com"
+      linkGitHub: "https://github.com/tonydevpro/calculadora1",
+      linkDemo: "https://tonydevpro.github.io/calculadora1/",
+      ferramentas: "React, HTML, CSS, JavaScript"
     },
-    {
-      imagem: card,
-      titulo: "Card",
-      descricao: "Um componente de card estilizado.",
-      linkGitHub: "https://github.com/seu-usuario/card",
-      linkDemo: "https://demo-card.com"
-    },
+    
     {
       imagem: cloneX,
       titulo: "Clone X",
       descricao: "Um clone da interface do X.",
-      linkGitHub: "https://github.com/seu-usuario/clone-x",
-      linkDemo: "https://demo-clone-x.com"
+      linkGitHub: "https://github.com/tonydevpro/clone-twitter-x",
+      linkDemo: "https://tonydevpro.github.io/clone-twitter-x/",
+      ferramentas: "React, HTML, CSS, JavaScript"
     },
     {
       imagem: cronometro,
       titulo: "Cronômetro",
       descricao: "Um cronômetro simples e eficiente.",
-      linkGitHub: "https://github.com/seu-usuario/cronometro",
-      linkDemo: "https://demo-cronometro.com"
+      linkGitHub: "https://github.com/tonydevpro/Cronometros",
+      linkDemo: "https://tonydevpro.github.io/Cronometros/",
+      ferramentas: "React, HTML, CSS, JavaScript"
     },
     {
       imagem: escolhaSeuEstilo,
       titulo: "Escolha Seu Estilo",
       descricao: "Um projeto para escolher estilos personalizados.",
-      linkGitHub: "https://github.com/seu-usuario/escolha-seu-estilo",
-      linkDemo: "https://demo-escolha-seu-estilo.com"
+      linkGitHub: "https://github.com/tonydevpro/mudando-temas",
+      linkDemo: "https://tonydevpro.github.io/mudando-temas/",
+      ferramentas: "React, HTML, CSS, JavaScript"
     },
-    {
-      imagem: formulario,
-      titulo: "Formulário",
-      descricao: "Um formulário de cadastro responsivo.",
-      linkGitHub: "https://github.com/seu-usuario/formulario",
-      linkDemo: "https://demo-formulario.com"
-    },
+    
     {
       imagem: geradorDeSenhas,
       titulo: "Gerador de Senhas",
       descricao: "Um gerador de senhas seguras.",
-      linkGitHub: "https://github.com/seu-usuario/gerador-de-senhas",
-      linkDemo: "https://demo-gerador-de-senhas.com"
+      linkGitHub: "https://github.com/tonydevpro/gerador-de-Senhas-Aleat-rias",
+      linkDemo: "https://tonydevpro.github.io/gerador-de-Senhas-Aleat-rias/",
+      ferramentas: "HTML, CSS, JavaScript"
     },
-    {
-      imagem: ingressos,
-      titulo: "Ingressos",
-      descricao: "Um sistema de reserva de ingressos.",
-      linkGitHub: "https://github.com/seu-usuario/ingressos",
-      linkDemo: "https://demo-ingressos.com"
-    },
+    
     {
       imagem: jogoDaVelha,
       titulo: "Jogo da Velha",
       descricao: "O clássico jogo da velha.",
-      linkGitHub: "https://github.com/seu-usuario/jogo-da-velha",
-      linkDemo: "https://demo-jogo-da-velha.com"
+      linkGitHub: "https://github.com/tonydevpro/jogo-da-velha-danki",
+      linkDemo: "https://tonydevpro.github.io/jogo-da-velha-danki/",
+      ferramentas: "React, HTML, CSS, JavaScript"
     },
     {
       imagem: jogoVelha,
       titulo: "Jogo da Velha 2",
       descricao: "Outra versão do jogo da velha.",
-      linkGitHub: "https://github.com/seu-usuario/jogo-velha",
-      linkDemo: "https://demo-jogo-velha.com"
+      linkGitHub: "https://github.com/tonydevpro/jogo-da-velha",
+      linkDemo: "https://tonydevpro.github.io/jogo-da-velha/",
+      ferramentas: "React, HTML, CSS, JavaScript"
     },
     {
       imagem: jogoPedraPapelTesoura,
       titulo: "Jogo Pedra, Papel e Tesoura",
       descricao: "O clássico jogo de pedra, papel e tesoura.",
-      linkGitHub: "https://github.com/seu-usuario/jogo-pedra-papel-tesoura",
-      linkDemo: "https://demo-jogo-pedra-papel-tesoura.com"
+      linkGitHub: "https://github.com/tonydevpro/Projeto-pedra--Papel-e-tesoura",
+      linkDemo: "https://tonydevpro.github.io/Projeto-pedra--Papel-e-tesoura/",
+      ferramentas: "HTML, CSS, JavaScript"
     },
-    {
-      imagem: linkDev,
-      titulo: "Link Dev",
-      descricao: "Um agregador de links para desenvolvedores.",
-      linkGitHub: "https://github.com/seu-usuario/link-dev",
-      linkDemo: "https://demo-link-dev.com"
-    },
+    
     {
       imagem: listaDeTarefa,
       titulo: "Lista de Tarefas",
       descricao: "Um gerenciador de tarefas simples.",
-      linkGitHub: "https://github.com/seu-usuario/lista-de-tarefas",
-      linkDemo: "https://demo-lista-de-tarefas.com"
+      linkGitHub: "https://github.com/tonydevpro/lista-de-tarefa",
+      linkDemo: "https://tonydevpro.github.io/lista-de-tarefa/",
+      ferramentas: "React, HTML, CSS, JavaScript"
     },
     {
       imagem: listaMercado,
       titulo: "Lista de Mercado",
       descricao: "Um app para gerenciar listas de compras.",
-      linkGitHub: "https://github.com/seu-usuario/lista-mercado",
-      linkDemo: "https://demo-lista-mercado.com"
+      linkGitHub: "https://github.com/tonydevpro/SuperMercado",
+      linkDemo: "https://tonydevpro.github.io/SuperMercado/",
+      ferramentas: "HTML, CSS, JavaScript"
+    },
+    
+    {
+      imagem: previsaoTempo,
+      titulo: "Previsão do Tempo",
+      descricao: "Um app para consultar a previsão do tempo.",
+      linkGitHub: "https://github.com/tonydevpro/previsao-do-tempo",
+      linkDemo: "https://tonydevpro.github.io/previsao-do-tempo/",
+      ferramentas: "React, HTML, CSS, JavaScript, API de Clima"
+    },
+    {
+      imagem: linkDev,
+      titulo: "Link Dev",
+      descricao: "Um agregador de links para desenvolvedores.",
+      linkGitHub: "https://github.com/tonydevpro/projeto-dev-links",
+      linkDemo: "https://tonydevpro.github.io/projeto-dev-links/",
+      ferramentas: "HTML, CSS"
     },
     {
       imagem: lojaPg,
       titulo: "Loja PG",
       descricao: "Uma loja virtual simples.",
-      linkGitHub: "https://github.com/seu-usuario/loja-pg",
-      linkDemo: "https://demo-loja-pg.com"
-    },
-    {
-      imagem: previsaoTempo,
-      titulo: "Previsão do Tempo",
-      descricao: "Um app para consultar a previsão do tempo.",
-      linkGitHub: "https://github.com/seu-usuario/previsao-tempo",
-      linkDemo: "https://demo-previsao-tempo.com"
-    },
-    {
-      imagem: projetoFormulario,
-      titulo: "Projeto Formulário",
-      descricao: "Um formulário de cadastro avançado.",
-      linkGitHub: "https://github.com/seu-usuario/projeto-formulario",
-      linkDemo: "https://demo-projeto-formulario.com"
+      linkGitHub: "https://github.com/tonydevpro/pagina-de-produtos-de-ecomece---frontend-mentor",
+      linkDemo: "https://tonydevpro.github.io/pagina-de-produtos-de-ecomece---frontend-mentor/",
+      ferramentas: "HTML, CSS, JavaScript"
     },
     {
       imagem: projetoQrCode,
       titulo: "Projeto QR Code",
       descricao: "Um gerador de QR codes.",
-      linkGitHub: "https://github.com/seu-usuario/projeto-qrcode",
-      linkDemo: "https://demo-projeto-qrcode.com"
+      linkGitHub: "https://github.com/tonydevpro/fontend-mentor-QR-Code-Desafio",
+      linkDemo: "https://tonydevpro.github.io/fontend-mentor-QR-Code-Desafio/",
+      ferramentas: "HTML, CSS"
     },
     {
       imagem: projetoXDevs,
       titulo: "Projeto X Devs",
       descricao: "Um projeto colaborativo com vários desenvolvedores.",
-      linkGitHub: "https://github.com/seu-usuario/projeto-xdevs",
-      linkDemo: "https://demo-projeto-xdevs.com"
+      linkGitHub: "https://github.com/tonydevpro/projeto-xdevs",
+      linkDemo: "https://tonydevpro.github.io/projeto-xdevs/",
+      ferramentas: "HTML, CSS"
     },
     {
       imagem: relogio,
       titulo: "Relógio",
       descricao: "Um relógio digital simples.",
-      linkGitHub: "https://github.com/seu-usuario/relogio",
-      linkDemo: "https://demo-relogio.com"
+      linkGitHub: "https://github.com/tonydevpro/relogio",
+      linkDemo: "https://tonydevpro.github.io/relogio/",
+      ferramentas: "HTML, CSS, JavaScript"
     },
     {
       imagem: relogioData,
       titulo: "Relógio e Data",
       descricao: "Um relógio digital com exibição de data.",
-      linkGitHub: "https://github.com/seu-usuario/relogio-data",
-      linkDemo: "https://demo-relogio-data.com"
+      linkGitHub: "https://github.com/tonydevpro/relogio",
+      linkDemo: "https://tonydevpro.github.io/des10/",
+      ferramentas: "HTML, CSS, JavaScript"
+    },
+    {
+      imagem: ingressos,
+      titulo: "Ingressos",
+      descricao: "Um sistema de reserva de ingressos.",
+      linkGitHub: "https://github.com/tonydevpro/pagina-de-ingressos",
+      linkDemo: "https://tonydevpro.github.io/pagina-de-ingressos/",
+      ferramentas: "HTML, CSS"
+    },
+    {
+      imagem: formulario,
+      titulo: "Formulário",
+      descricao: "Um formulário de cadastro responsivo.",
+      linkGitHub: "https://github.com/tonydevpro/Formulario",
+      linkDemo: "https://tonydevpro.github.io/Formulario/",
+      ferramentas: "HTML, CSS"
+    },
+    
+    {
+      imagem: card,
+      titulo: "Card",
+      descricao: "Um componente de card estilizado.",
+      linkGitHub: "https://github.com/tonydevpro/desafio-card",
+      linkDemo: "https://tonydevpro.github.io/desafio-card/",
+      ferramentas: "HTML, CSS"
     }
   ];
 
@@ -225,6 +245,35 @@ function App() {
                 <img src={projeto.imagem} alt={projeto.titulo} />
                 <h3>{projeto.titulo}</h3>
                 <p>{projeto.descricao}</p>
+                <div className='ferramentasContainer'>
+                {projeto.ferramentas.split(', ').map((ferramenta, i) => {
+  let Icone;
+  switch (ferramenta) {
+    case 'React':
+      Icone = FaReact;
+      break;
+    case 'HTML':
+      Icone = FaHtml5;
+      break;
+    case 'CSS':
+      Icone = FaCss3;
+      break;
+    case 'JavaScript':
+      Icone = FaJs;
+      break;
+    default:
+      Icone = null;
+  }
+
+
+return ( // <--- ERRO: Este return está fora do escopo do map
+  <div key={i} className="tooltip">
+    {Icone && <Icone className="ferramentaIcon" />}
+    <span className="tooltipText">{ferramenta}</span>
+  </div>
+);
+})}
+                </div>
                <div className="projetoLinks">
                  <a href={projeto.linkGitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
                  <a href={projeto.linkDemo} target="_blank" rel="noopener noreferrer">Demo</a>
