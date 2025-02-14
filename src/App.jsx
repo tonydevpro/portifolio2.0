@@ -21,7 +21,7 @@ import projetoQrCode from './assets/projetoQrCode.png';
 import projetoXDevs from './assets/projetoXDevs.png';
 import relogio from './assets/relogio.png';
 import relogioData from './assets/relogioData.png';
-import { FaReact, FaHtml5, FaCss3, FaJs } from 'react-icons/fa';
+import { FaReact, FaHtml5, FaCss3, FaJs, FaGitAlt } from 'react-icons/fa';
 
 function App() {
   const projetos = [
@@ -200,6 +200,13 @@ function App() {
       ferramentas: "HTML, CSS"
     }
   ];
+  const habilidades = [
+    { nome: 'HTML', icone: <FaHtml5 /> },
+    { nome: 'CSS', icone: <FaCss3 /> },
+    { nome: 'JavaScript', icone: <FaJs /> },
+    { nome: 'React', icone: <FaReact /> },
+    { nome: 'Git', icone: <FaGitAlt /> },
+  ];
 
   return (
     <>
@@ -229,11 +236,12 @@ function App() {
         <div className='geralHabilidades' id="habilidades">
           <h2>Habilidades</h2>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Git</li>
+            {habilidades.map((habilidade, index) => (
+              <li key={index}>
+                <div className="habilidadeIcone">{habilidade.icone}</div>
+                <span>{habilidade.nome}</span>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -295,9 +303,9 @@ return ( // <--- ERRO: Este return está fora do escopo do map
             <button type="submit">Enviar</button>
           </form>
           <div className='redesSociais'>
-            <a href="link-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="link-github" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="link-instagram" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://www.linkedin.com/in/antonio-josé-alves" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/tonydevpro" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://wa.me/5581989923733" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           </div>
         </div>
         <footer className='geralRodape'>

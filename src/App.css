@@ -396,7 +396,41 @@ body {
 .ferramentaIcon:hover {
   transform: scale(1.2);
 }
+.geralHabilidades ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
+.geralHabilidades ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  padding: 20px;
+  border-radius: 10px;
+  width: 120px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.geralHabilidades ul li:hover {
+  background-color: var(--cor-secundaria);
+  transform: translateY(-5px);
+}
+
+.habilidadeIcone {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--cor-branco);
+}
+
+.geralHabilidades ul li span {
+  font-size: 1.1rem;
+}
 /* Animações */
 @keyframes fadeIn {
   from {
