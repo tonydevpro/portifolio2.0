@@ -274,7 +274,7 @@ function App() {
   }
 
 
-return ( // <--- ERRO: Este return está fora do escopo do map
+return (
   <div key={i} className="tooltip">
     {Icone && <Icone className="ferramentaIcon" />}
     <span className="tooltipText">{ferramenta}</span>
